@@ -21,6 +21,25 @@ Green (MOSI) | 5 (MOSI)
 Orange (RST) | 1 (RESET)
 Black (GND) | 4 (GND)
 
+## Installing avrdude on Mac OSX
+
+```
+$ brew install avrdude
+```
+
+## Installing avr-libc on Mac OSX
+
+```
+$ brew tap osx-cross/avr
+$ brew install avr-libc
+```
+
+## Testing your connection
+
+```
+$ avrdude -c usbtiny -p t85
+```
+
 ## Compiling
 
 1. Write your program in a file named `main.c`
@@ -66,6 +85,20 @@ You can check your fuse settings [here](http://www.engbedded.com/fusecalc/). The
     ```
     $ avrdude -P usb -p t85 -c usbtiny -e -U lfuse:w:0x62:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
     ```
+
+## Get memory usage of your .elf
+
+```
+avr-size --format=avr --mcu=attiny85 main.elf
+```
+
+## Viewing assembly from your .elf
+
+This command will output the assembly language code from your .elf file:
+
+```
+$ avr-objdump -d main.elf
+```
 
 ## Resources
 
