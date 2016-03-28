@@ -14,11 +14,11 @@
 
 ISP | Chip
 --- | ----
+Orange (RST) | 1 (RESET)
+Yellow (SCK) | 7 (SCK)
 Blue (MISO) | 6 (MISO)
 Red (5V) | 8 (VCC)
-Yellow (SCK) | 7 (SCK)
 Green (MOSI) | 5 (MOSI)
-Orange (RST) | 1 (RESET)
 Black (GND) | 4 (GND)
 
 ## Installing avrdude on Mac OSX
