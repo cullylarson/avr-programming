@@ -67,7 +67,7 @@ You can check your fuse settings [here](http://www.engbedded.com/fusecalc/). The
     $ avrdude -P usb -p t85 -c usbtiny -e -U lfuse:w:0x62:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
     ```
 
-## References
+## Resources
 
 * [Fuse Calculator](http://www.engbedded.com/fusecalc/)
 * [Sparkfun Pocket AVR Programmer](https://www.sparkfun.com/products/9825)
