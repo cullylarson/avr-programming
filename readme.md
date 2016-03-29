@@ -86,7 +86,7 @@ You can check your fuse settings [here](http://www.engbedded.com/fusecalc/). The
     $ avrdude -P usb -p t85 -c usbtiny -e -U lfuse:w:0x62:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
     ```
 
-## Get memory usage of your .elf
+## Getting memory usage of your .elf
 
 ```
 avr-size --format=avr --mcu=attiny85 main.elf
@@ -107,6 +107,6 @@ $ avr-objdump -d main.elf
 * [Sparkfun programmer board overview](https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide/board-overview)
 * [Some good images and diagrams of ISP pins](https://learn.sparkfun.com/tutorials/installing-a-bootloader-on-the-microview/wiring-the-programmer)
 * [Setting up avrdude and avr-libc on Mac OSX](http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/)
-* [Good sample code and instructinos](http://www.instructables.com/id/Honey-I-Shrunk-the-Arduino-Moving-from-Arduino-t/?ALLSTEPS)
+* [Good sample code and instructions](http://www.instructables.com/id/Honey-I-Shrunk-the-Arduino-Moving-from-Arduino-t/?ALLSTEPS)
 * [C constants for ATTinys](https://github.com/vancegroup-mirrors/avr-libc/blob/master/avr-libc/include/avr/iotnx5.h)
 * [Another general example](http://www.meoworkshop.org/how-to-avr-with-osx/)
